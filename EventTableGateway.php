@@ -82,11 +82,15 @@ class EventTableGateway {
             "managerID" => $mID
             
         );
+         echo '<pre>';
+        print_r($sqlQuery);
+        print_r($params);
+        print_r($_POST);
+        echo '</pre>';
         
         $status = $statement->execute($params);
         return ($statement->rowCount() == 1);
     }
-
     public function insertEvent($t, $d, $sd, $ed, $tm, $ma, $c, $mID) {
         $sqlQuery = "INSERT INTO event " .
                 "(title, description, startDate, endDate, time, maxAttendees, cost, managerID) " .

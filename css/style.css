@@ -30,6 +30,7 @@ background: #e2e2e2;
 }
 .myNav{
 background: #e2e2e2;
+margin-bottom: 0;
 
 }
 /*Green div with dary links*/
@@ -342,9 +343,11 @@ button, html input[type="button"], input[type="reset"], input[type="submit"],
     
     .otherTablesBox{
     
-         
-         background-color: rgba(231, 76, 60, 0.7);
+         background-color: #e74c3c;
+         //background-color: rgba(231, 76, 60, 0.7);
         border: 1px solid #e74c3c;
+        border-radius: .3em;
+        height: 100%;
     }
     
     .createAccount{
@@ -640,9 +643,7 @@ div.user-menu div.user-menu-content:not(.active){
     color: #fff;
     margin-bottom: 12px;
 }
-button, html input[type="button"], input[type="reset"], input[type="submit"], .password{
-  color: #fff;  
-}
+
 
 /*<div class="row square col-lg-12">
             <div class="col-md-7 col-md-offset-5 user-details">
@@ -698,8 +699,308 @@ button, html input[type="button"], input[type="reset"], input[type="submit"], .p
 .whiteFont{
     color:#fff;
 }
+.redFont{
+    color:#e74c3c;
+    
+}
+
 
 
 .pushDown{
     margin-top: 8em;
 }
+.greenBG{
+    background-color: #04cb86;
+}
+.displayingOtherTables a:hover{
+    color:#04cb86;
+}
+.createManagerBG{
+    background-image: url(../img/managerBG.jpg);
+}
+
+.font2{
+    font-size: 3em;
+}
+
+
+
+
+
+/*----------------sidebar navigation------------------------------------------------------------------------------------------------------------------------------*/
+
+#sidebar {
+    width: 22em;
+    height: 100%;
+    position: fixed;
+    background: #e74c3c;
+}
+
+#sidebar h5 {
+	color: #fff;
+	font-weight: 700;
+}
+
+#sidebar ul li {
+    position: relative;
+}
+
+#sidebar .sub-menu > .sub li  {
+    padding-left: 32px;
+}
+
+#sidebar .sub-menu > .sub li:last-child {
+    padding-bottom: 10px;
+}
+
+/*LEFT NAVIGATION ICON*/
+
+
+
+ul.sidebar-menu , ul.sidebar-menu li ul.sub{
+    margin: -2px 0 0;
+    padding: 0;
+}
+
+ul.sidebar-menu {
+    margin-top: 75px;
+}
+
+#sidebar > ul > li > ul.sub {
+    display: none;
+}
+
+#sidebar > ul > li.active > ul.sub, #sidebar > ul > li > ul.sub > li > a {
+    display: block;
+}
+
+
+
+
+
+ul.sidebar-menu li a{
+    color: #aeb2b7;
+    text-decoration: none;
+    display: block;
+    padding: 15px 0 15px 10px;
+    font-size: 12px;
+    outline: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+/*colour around the table links*/
+ul.sidebar-menu li a.active, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
+    background: #e2e2e2;
+    color: #fff;
+    display: block;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+ul.sidebar-menu li a i {
+    font-size: 15px;
+    padding-right: 6px;
+}
+
+ul.sidebar-menu li a:hover i, ul.sidebar-menu li a:focus i {
+    color: #fff;
+}
+
+ul.sidebar-menu li a.active i {
+    color: #fff;
+}
+
+
+.mail-info, .mail-info:hover {
+    margin: -3px 6px 0 0;
+    font-size: 11px;
+}
+.boldFont{
+    font-weight: bolder;
+    font-size: 2.6em;
+}
+.otherTablesFont{
+
+    color: #04cb86;
+    font-size: 2.5em;
+
+}
+
+.iconPushUp{
+    margin-bottom: 1.6em;
+}
+.iconPushUp2{
+    margin-bottom: .4em;
+}
+
+
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx mt box xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+/* LINE ICONS CONFIGURATION */
+
+.mtbox {
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+
+.box1 {
+	padding: 15px;
+	text-align: center;
+	color: #989898;
+	border-bottom: 1px solid #989898;
+}
+
+.box1 span {
+	font-size: 50px;
+
+}
+
+.box1 h3 {
+	text-align: center;
+}
+
+.box0:hover .box1 {
+	border-bottom: 1px solid #ffffff;
+}
+
+.box0 p {
+	text-align: center;
+	font-size: 12px;
+	color: #f2f2f2;
+}
+
+.box0:hover p {
+	color: #ff865c;
+}
+
+.box0:hover {
+	background: #e2e2e2;
+	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* MAIN CHART CONFIGURATION */
+.main-chart {
+	padding-top: 20px;
+}
+
+.mleft {
+}
+
+.border-head h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+	margin-left: 15px;	
+    padding-bottom: 5px;
+    font-weight: normal;
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+    font-weight: 700;
+    color: #989898;
+}
+
+.custom-bar-chart {
+    height: 290px;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+    border-bottom: 1px solid #c9cdd7;
+}
+
+.custom-bar-chart .bar {
+    height: 100%;
+    position: relative;
+    width: 6%;
+    margin: 0px 4%;
+    float: left;
+    text-align: center;
+    z-index: 10;
+}
+
+.custom-bar-chart .bar .title {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+}
+
+.custom-bar-chart .bar .value {
+    position: absolute;
+    bottom: 0;
+    background: #ff865c;
+    color: #68dff0;
+    width: 100%;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+
+
+.custom-bar-chart .bar .value:hover {
+    background: #2f2f2f;
+    color: #fff;
+}
+
+.y-axis {
+    color: #555555;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    font-size: 11px;
+}
+
+.y-axis li {
+    border-top: 1px dashed #dbdce0;
+    display: block;
+    height: 58px;
+    width: 100%;
+}
+
+.y-axis li:last-child {
+    border-top: none;
+}
+
+.y-axis li span {
+    display: block;
+    margin: -10px 0 0 -60px;
+    padding: 0 10px;
+    width: 40px;
+}
+
+///////////////////////////////could delete hald of this top bar ^^^^^^^^^
+body {
+  padding: 0 10px;
+}
+
+#some-element {
+  display: none;
+  font-size: 10px;
+}
+
+#some-div:hover #some-element {
+  display: block;
+}
+.noSytle{
+    list-style: none;
+    margin-left: -1em;
+    font-size: 1.2em;
+    text-align: left;
+} 
+.noSytle li{
+   margin-top: 2em;
+} 

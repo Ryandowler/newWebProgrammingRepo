@@ -57,19 +57,23 @@ class ManagerTableGateway {
         return ($statement->rowCount() == 1);
     }
     
-    public function updateManager($mID, $mn, $me) {
+    public function updateManager($managerID, $mn, $me) {
         $sqlQuery =
                 "UPDATE managers SET " .
-                "name = :name " .
-                "managerEmail = :managerEmail " .
-                "WHERE managerID = :managerID"; 
+                "name = :name, " .
+                "managerEmail = :managerEmail " ."WHERE managerID = :managerID"; 
         
         $statement = $this->connection->prepare($sqlQuery);
         $params = array(
-            "managerID" => $mID,
+            "managerID" => $managerID,
             "name" => $mn,
             "managerEmail" => $me
         );
+        echo '<pre>';
+        print_r($sqlQuery);
+        print_r($params);
+        print_r($_POST);
+        echo '</pre>';
         
         $status = $statement->execute($params);
         return ($statement->rowCount() == 1);
@@ -87,11 +91,11 @@ class ManagerTableGateway {
                 
         );
         
-        //echo '<pre>';
-        //print_r($sqlQuery);
-        ////print_r($params);
-        //print_r($_POST);
-        //echo '</pre>';
+        echo '<pre>';
+        print_r($sqlQuery);
+        print_r($params);
+        print_r($_POST);
+        echo '</pre>';
         
         $status = $statement->execute($params);
    

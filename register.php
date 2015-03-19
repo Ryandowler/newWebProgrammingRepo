@@ -2,26 +2,15 @@
 <!-- POSIBLY NOT NEEDEDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD-->
 <html>
     <head>
-        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-        <meta charset="UTF-8">
-        <title></title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script type="text/javascript" src="js/register.js"></script>
-        <!--importing jquery for navbar-->
-        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-        <script src="js/script.js"></script>
+        <?php
+        //no need to require connection etc as its already required in checkRegister
+        require 'Styles.php';
+        require 'Scripts.php';
+        require 'NavBar.php';
+        ?>
     </head>
     <body>
 
-        <!-- Calling in navigation bar, if i need to edit just edit NavBar.php-->
-        <?php
-        //require 'NavBar.php'
-        ?>
-        <?php
-        //I didnt use this as i went with the better option of drop down sign out like a real site
-        //require 'toolbar.php' 
-        ?>
         <?php
         if (isset($message)) {
             echo '<p>' . $message . '</p>';
@@ -29,7 +18,7 @@
         ?>
         <div>
             <!-- showing HTML where the forms data is coming from, bassically linking it-->
-            <form id="registerForm" action="checkRegister.php" method="POST" onsubmit="return validateRegistration(this);">
+            <form id="registerForm" action="checkRegister.php" method="POST" onsubmit="return validateRegistration(this);" class="col-lg-12 col-lg-push-4 pushDown">
                 <table>
                     <tbody>
                         <tr><!-- table data-->
@@ -97,7 +86,7 @@
                                 ?>" />     
 
                             </td>
-                             <td>
+                            <td>
                                 <span id="fullnameError" class="error">
                                     <!--using internal PHP code to check everything its told to do in the other page
                                     (no blanks etc), and the id to link up to the correct one -->
@@ -141,7 +130,7 @@
                                 ?>" />     
 
                             </td>
-                             <td>
+                            <td>
                                 <span id="emailaddressError" class="error">
                                     <!--using internal PHP code to check everything its told to do in the other page
                                     (no blanks etc), and the id to link up to the correct one -->
@@ -184,111 +173,6 @@
                         </tr>
                     </tbody>
                 </table>
-
-
-
-
-                <!-- second table for the errors-->
-
-                <table id="noStyle">
-                    <tbody>
-                        <tr><!-- table data-->
-                            <td><span id="usernameError" class="error">
-                                    <!--using internal PHP code to check everything its told to do in the other page
-                                    (no blanks etc), and the id to link up to the correct one -->
-                                    <?php
-                                    if (isset($errorMessage) && isset($errorMessage['username'])) {
-                                        echo $errorMessage['username'];
-                                    }
-                                    ?>
-                                </span></td>
-
-                        </tr>
-                        <tr>
-                            <td><span id="passwordError" class="error">
-                                    <!--using internal PHP code to check everything its told to do in the other page
-                                    (no blanks etc), and the id to link up to the correct one -->
-                                    <?php
-                                    if (isset($errorMessage) && isset($errorMessage['password'])) {
-                                        echo $errorMessage['password'];
-                                    }
-                                    ?>
-                                </span>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td><span id="password2Error" class="error">
-                                    <!--using internal PHP code to check everything its told to do in the other page
-                                    (no blanks etc), and the id to link up to the correct one -->
-                                    <?php
-                                    if (isset($errorMessage) && isset($errorMessage['password2'])) {
-                                        echo $errorMessage['password2'];
-                                    }
-                                    ?>
-                                </span>
-                            </td>
-
-                        </tr>
-                        <tr><!-- table data-->
-                            <td><span id="fullnameError" class="error">
-                                    <!--using internal PHP code to check everything its told to do in the other page
-                                    (no blanks etc), and the id to link up to the correct one -->
-                                    <?php
-                                    if (isset($errorMessage) && isset($errorMessage['fullname'])) {
-                                        echo $errorMessage['fullname'];
-                                    }
-                                    ?>
-                                </span>
-                            </td>
-
-                        </tr>
-                        <tr><!-- table data-->
-                            <td><span id="ageError" class="error">
-                                    <!--using internal PHP code to check everything its told to do in the other page
-                                    (no blanks etc), and the id to link up to the correct one -->
-                                    <?php
-                                    if (isset($errorMessage) && isset($errorMessage['age'])) {
-                                        echo $errorMessage['age'];
-                                    }
-                                    ?>
-                                </span>
-                            </td>
-
-                        </tr>
-                        <tr><!-- table data-->
-                            <td><span id="emailaddressError" class="error">
-                                    <!--using internal PHP code to check everything its told to do in the other page
-                                    (no blanks etc), and the id to link up to the correct one -->
-                                    <?php
-                                    if (isset($errorMessage) && isset($errorMessage['emailaddress'])) {
-                                        echo $errorMessage['emailaddress'];
-                                    }
-                                    ?>
-                                </span>
-                            </td>
-
-                        </tr>
-                        <tr><!-- table data-->
-                            <td><span id="maidenNameError" class="error">
-                                    <!--using internal PHP code to check everything its told to do in the other page
-                                    (no blanks etc), and the id to link up to the correct one -->
-                                    <?php
-                                    if (isset($errorMessage) && isset($errorMessage['maidenName'])) {
-                                        echo $errorMessage['maidenName'];
-                                    }
-                                    ?>
-                                </span>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td></td>
-
-                        </tr>
-                    </tbody>
-                </table>
-
             </form> <!-- linking in the javascript -->
             <script type="text/javascript" src="js/register.js"></script>
         </div>   

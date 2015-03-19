@@ -3,8 +3,6 @@
     <?php
     require 'NavBar.php';
     require 'ensureUserLoggedIn.php';
-    //I didnt use this as i went with the better option of drop down sign out like a real site
-    // Calling in navigation bar, if i need to edit just edit NavBar.php
     require 'Styles.php';
     require 'Scripts.php';
     require_once 'Manager.php';
@@ -22,14 +20,11 @@
     ?>
 
     <div>
-
-
         <?php
         $id = session_id();
         if ($id == "") {
             session_start();
         }
-
         require 'ensureUserLoggedIn.php';
 
         if (!isset($_GET) || !isset($_GET['id'])) {
@@ -42,8 +37,8 @@
 
         $statement = $gateway->getManagerById($id);
         ?>
-        <div class="col-lg-6">
-            <table id ="table" border="1" class="col-lg-6 col-lg-push-5">
+        <div class="col-lg-6 col-lg-push-2 pushDown">
+            <table id ="table" border="1" class="col-lg-6 col-lg-push-4">
                 <tbody>
                     <?php
                     $row = $statement->fetch(PDO::FETCH_ASSOC);

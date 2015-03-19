@@ -9,7 +9,7 @@
         ?>
         <title>Create Manager</title>
     </head>
-    <body>
+    <body class="createManagerBG">
         <?php
         if (isset($message)) {
             echo '<p>' . $message . '</p>';
@@ -18,12 +18,9 @@
         //Calling in navigation bar, if i need to edit just edit NavBar.php
         //require 'NavBar.php'
         ?>
-
-
         <div>
-
-            <h1 class="col-lg-offset-4">Insert Manager Details</h1>
-            <form id="createManagerForm" class="well col-lg-5 col-lg-offset-4" action="createManager.php" method="POST">
+            <h1 class="col-lg-offset-6 whiteFont">Insert Manager Details</h1>
+            <form id="createManagerForm" class="well col-lg-5 col-lg-offset-6" action="createManager.php" method="POST">
                 <table border="0">
                     <tbody>
                         <!--making table rows to input data-->

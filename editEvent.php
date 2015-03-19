@@ -28,5 +28,5 @@ $cost = filter_input(INPUT_POST, 'cost', FILTER_SANITIZE_STRING);
 $managerID = filter_input(INPUT_POST, 'managerID', FILTER_SANITIZE_STRING);
 
 $gateway->updateEvent($eventID, $title, $description, $startDate, $endDate, $time, $maxAttendees, $cost, $managerID);
-header('Location: home.php');
+//header('Location: home.php');
 

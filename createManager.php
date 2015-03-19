@@ -32,7 +32,7 @@ if ($managerEmail === FALSE || $managerEmail === '') {
 
 $managerID = $gateway->insertManager($name, $managerEmail);
 $message = "manager created woohooo";
-header("Location: ManagersTableView.php");
+//header("Location: ManagersTableView.php");
 
 //making sure $username is set and not null
 /*

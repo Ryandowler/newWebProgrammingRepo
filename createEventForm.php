@@ -194,7 +194,7 @@
                         <tr>
                         <td>Manager ID</td>
                         <td>
-                            <select name="managerID">
+                            <select name="managerID" class="inputFieldPush form-control">
                                 <option value="-1">No Manager</option>
                                 <?php
                                     $m = $managers->fetch(PDO::FETCH_ASSOC);

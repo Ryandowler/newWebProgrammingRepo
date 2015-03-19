@@ -10,7 +10,7 @@
         require_once 'EventTableGateway.php';
         ?>
     </head>
-    <body>
+    <body class="greenBG">
         <?php
         if (isset($message)) {
             echo '<p>' . $message . '</p>';
@@ -46,11 +46,13 @@
                 echo '<p>' . $message . '</p>';
             }
             ?>
+            <!--
             <div class="col-lg-4">
-                <div class="otherTablesBox col-lg-7">
+                <div class="otherTablesBox col-lg-5">
                     <h1>Other Tables</h1>
                     <div class="col-lg-2">
-                        <table class="displayingOtherTables table-responsive table-condensed table-striped table-hover">
+                        <table class="displayingOtherTables table-responsive table-condensed">
+                            
                             <tr>
                                 <td><img src="img/notepad.png" /></td>
                                 <td><a href = "home.php">Events</a></td>
@@ -79,8 +81,87 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-8">
-                <form ID="HomeForm" class="col-lg-12" method="POST" action="deleteSelectedEvents.php">
+            -->
+            
+            
+            
+            
+            
+                      <!-- **********************************************************************************************************************************************************
+      MAIN SIDEBAR MENU
+      *********************************************************************************************************************************************************** -->
+      <!--sidebar start-->
+      <aside>
+          <div id="sidebar"  class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu" id="nav-accordion">
+              
+              	  <p class="centered"><a href="profile.html"><img src="img/Eventer_logo.png" class="col-lg-offset-3 img-responsive"></a></p>
+
+                  <li class="mt">
+                      <h3  class="col-lg-offset-2 boldFont">Other Tables</h3>
+                      <a class="active" href="home.php">
+                           
+                         
+                          <img class="iconPushUp" src="img/notepad.png" />
+                          <span class="otherTablesFont">Events</span>
+                      </a>
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="ManagersTableView.php" >
+                         
+                          <img class="iconPushUp" src="img/manager.png" />
+                          <span class="otherTablesFont">Managers</span>
+                      </a>
+                     
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="#" >
+                          
+                          <img class="iconPushUp" src="img/organiser.png" />
+                          <span class="otherTablesFont">Organisers</span>
+                      </a>
+                      
+                  </li>
+                  <li class="sub-menu">
+                      <a href="#" >
+                          
+                          <img class="iconPushUp" src="img/asset.png" />
+                          <span class="otherTablesFont">Assets</span>
+                      </a>
+                      
+                  </li>
+                  <li class="sub-menu">
+                      <a href="#" >
+                       
+                          <img class="iconPushUp" src="img/location.png" />
+                          <span class="otherTablesFont">Location</span>
+                      </a>
+                     
+                  </li>
+                  <li class="sub-menu">
+                      <a href="#" >
+                          
+                          <img class="iconPushUp" src="img/attendee.png" />
+                          <span class="otherTablesFont">Attendee</span>
+                      </a>
+                     
+                  </li>
+                  
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+      <!--sidebar end-->
+            
+            
+            
+            
+            <div class="col-lg-8 col-lg-offset-3">
+                <div class="hidden-lg pushDown"> </div>
+                <form ID="HomeForm" class="col-lg-12 col-xs-2" method="POST" action="deleteSelectedEvents.php">
                     <table class ="homeTable table-responsive table-condensed table-striped table-hover  " >
                         <!--<?php
                         $username = $_SESSION['username'];
@@ -99,7 +180,7 @@
                                 <th>Max Attendees</th>
                                 <th>Cost</th>
                                 <th>Manager ID</th>
-                                <th>Options</th>
+                                <th  class="col-lg-3">Options</th>
                             </tr>
 
                         </thead>
@@ -130,10 +211,10 @@
 
                             echo '<td class=" noHover ">'
                             //<a href="somepage.html"><button type="button">Text of Some Page</button></a>
-                            . '<a href="viewEvent.php?id=' . $row['eventID'] . '"><button type="button" class="grid_2"  >View</button></a> '
-                            . '<a href="editEventForm.php?id=' . $row['eventID'] . '"><button type="button" class="grid_2">Edit</button></a> '
-                            . '<a class="deleteEvent" <a href="deleteEvent.php?id=' . $row['eventID'] . '"><button type="button" class="grid_2">Delete</button></a> '
-                            . '<p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p>'
+                            . '<a href="viewEvent.php?id=' . $row['eventID'] . '"><button type="button" class="btn btn-md btn-info"  ><span class="hidden-xs glyphicon glyphicon-eye-open"></span></button></a> '
+                            . '<a href="editEventForm.php?id=' . $row['eventID'] . '"><button type="button" class="btn btn-md btn-info"  ><span class="hidden-xs glyphicon glyphicon-wrench"></span></button></a> '
+                            . '<a class="deleteEvent" <a href="deleteEvent.php?id=' . $row['eventID'] . '"><button type="button" class="btn btn-md btn-info"  ><span class="hidden-xs glyphicon glyphicon-trash"></span></button></a> '
+                            
                             . '</td>';
                             echo '</tr>';
                             $row = $statement->fetch(PDO::FETCH_ASSOC);

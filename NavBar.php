@@ -1,14 +1,5 @@
 <!-- NAVBAR-->
 <html>
-    <?php
-    
-    //require 'ensureUserLoggedIn.php';
-    //I didnt use this as i went with the better option of drop down sign out like a real site
-    //require 'toolbar.php' 
-    ?>
-    <!-- Bootstrap -->
-    
-    <script src="js/respond.js"></script>
     <div class = "navbar navbar-inverse navbar-static-top myNav">
         <div class = "container">
             <a href = "Event_Management.php" class = "navbar-brand">
@@ -46,9 +37,11 @@
             </div>
         </div>
     </div>
+    <!--
     <text class="visible-lg">LARGE</text>
     <text class="visible-md">MEDIUM</text>
     <text class="visible-sm">SMALL</text>
     <text class="visible-xs">X-SMALL</text>
+    -->
     <!-- END OF NAVBAR-->
 </html>

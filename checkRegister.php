@@ -4,9 +4,7 @@
 require_once 'User.php';
 require_once 'Connection.php';
 require_once 'UserTableGateway.php';
-require 'Styles.php';
-require 'Scripts.php';
-require 'NavBar.php';
+
 
 
 $connection = Connection::getInstance();
