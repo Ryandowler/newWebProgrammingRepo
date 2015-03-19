@@ -56,7 +56,7 @@ class ManagerTableGateway {
 
         return ($statement->rowCount() == 1);
     }
-    
+    //test commit
     public function updateManager($managerID, $mn, $me) {
         $sqlQuery =
                 "UPDATE managers SET " .
