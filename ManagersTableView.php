@@ -16,7 +16,7 @@
             echo '<p>' . $message . '</p>';
         }
         ?>
-        <div>
+        <div class="mainWrapper">
             <?php
             $connection = Connection::getInstance();
             $gateway = new ManagerTableGateway($connection);
@@ -101,16 +101,16 @@
 
 
 
+<div class="">
+            <div class="">
 
 
 
 
 
 
+                <!--sidebar start-->
 
-
-            <!--sidebar start-->
-            <aside>
                 <div id="sidebar"  class="nav-collapse ">
                     <!-- sidebar menu start-->
                     <ul class="sidebar-menu" id="nav-accordion">
@@ -155,159 +155,161 @@
                     </ul>
                     <!-- sidebar menu end-->
                 </div>
-            </aside>
-            <!--sidebar end-->
-        </div>
 
-        <!--Top bar INFORMATION-->
-        <div class="row mtbox col-lg-offset-1">
-            <div class="col-md-2 col-sm-2 col-md-offset-1 box0">
-                <div class="box1">
-                    <div id="some-div">
-                        <h3 class="redFont"><img class="iconPushUp2 " src="img/notepad.png" /><text class="col-lg-offset-1">933</text></h3>
-                        <span id="some-element">
-                            <ul class="noSytle">
-                                <li><h4>933 Created Since 2010</h4></li>
-                                <li><img src = "img/concert.png" /><text class="col-lg-offset-1">273 Concerts</text></li>
-                                <li><img src = "img/sports.png" /><text class="col-lg-offset-1">350 Sports</text></li>
-                                <li><img src = "img/conferance.png" /><text class="col-lg-offset-1">168 Conference</text></li>
-                                <li><img src = "img/technology.png" /><text class="col-lg-offset-1">142 Technology</text></li>
-                            </ul>
-                          
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="col-md-2 col-sm-2 box0">
-                <div class="box1">
-                   <div id="some-div">
-                        <h3 class="redFont"><img class="iconPushUp2 " src="img/notepad.png" /><text class="col-lg-offset-1">933</text></h3>
-                        <span id="some-element">
-                            <ul class="noSytle">
-                                <li><h4>933 Created Since 2010</h4></li>
-                                <li><img src = "img/concert.png" /><text class="col-lg-offset-1">273 Concerts</text></li>
-                                <li><img src = "img/sports.png" /><text class="col-lg-offset-1">350 Sports</text></li>
-                                <li><img src = "img/conferance.png" /><text class="col-lg-offset-1">168 Conference</text></li>
-                                <li><img src = "img/technology.png" /><text class="col-lg-offset-1">142 Technology</text></li>
-                            </ul>
-                          
-                        </span>
-                    </div>
-                </div>
-               
-            </div>
-            <div class="col-md-2 col-sm-2 box0">
-                <div class="box1">
-                    <div id="some-div">
-                        <h3 class="redFont"><img class="iconPushUp2 " src="img/notepad.png" /><text class="col-lg-offset-1">933</text></h3>
-                        <span id="some-element">
-                            <ul class="noSytle">
-                                <li><h4>933 Created Since 2010</h4></li>
-                                <li><img src = "img/concert.png" /><text class="col-lg-offset-1">273 Concerts</text></li>
-                                <li><img src = "img/sports.png" /><text class="col-lg-offset-1">350 Sports</text></li>
-                                <li><img src = "img/conferance.png" /><text class="col-lg-offset-1">168 Conference</text></li>
-                                <li><img src = "img/technology.png" /><text class="col-lg-offset-1">142 Technology</text></li>
-                            </ul>
-                          
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 col-sm-2 box0">
-                <div class="box1">
-                    <div id="some-div">
-                        <h3 class="redFont"><img class="iconPushUp2 " src="img/notepad.png" /><text class="col-lg-offset-1">933</text></h3>
-                        <span id="some-element">
-                            <ul class="noSytle">
-                                <li><h4>933 Created Since 2010</h4></li>
-                                <li><img src = "img/concert.png" /><text class="col-lg-offset-1">273 Concerts</text></li>
-                                <li><img src = "img/sports.png" /><text class="col-lg-offset-1">350 Sports</text></li>
-                                <li><img src = "img/conferance.png" /><text class="col-lg-offset-1">168 Conference</text></li>
-                                <li><img src = "img/technology.png" /><text class="col-lg-offset-1">142 Technology</text></li>
-                            </ul>
-                          
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 col-sm-2 box0">
-                <div class="box1">
-                    <div id="some-div">
-                        <h3 class="redFont"><img class="iconPushUp2 " src="img/notepad.png" /><text class="col-lg-offset-1">933</text></h3>
-                        <span id="some-element">
-                            <ul class="noSytle">
-                                <li><h4>933 Created Since 2010</h4></li>
-                                <li><img src = "img/concert.png" /><text class="col-lg-offset-1">273 Concerts</text></li>
-                                <li><img src = "img/sports.png" /><text class="col-lg-offset-1">350 Sports</text></li>
-                                <li><img src = "img/conferance.png" /><text class="col-lg-offset-1">168 Conference</text></li>
-                                <li><img src = "img/technology.png" /><text class="col-lg-offset-1">142 Technology</text></li>
-                            </ul>
-                          
-                        </span>
-                    </div>
-                </div>
+                <!--sidebar end-->
             </div>
 
-        </div><!--Top bar INFORMATION END-->
+            <!--Top bar INFORMATION-->
+            <div class="topInfoBar col-lg-12">
+                <div class="ghgbgh row mtbox col-lg-offset-1">
+                    <div class="col-md-2 col-sm-2 col-md-offset-1 box0">
+                        <div class="box1">
+                            <div id="some-div">
+                                <h3 class="redFont"><img class="iconPushUp2 " src="img/notepad.png" /><text class="col-lg-offset-1">933</text></h3>
+                                <span id="some-element">
+                                    <ul class="noSytle">
+                                        <li><h4>933 Created Since 2010</h4></li>
+                                        <li><img src = "img/concert.png" /><text class="col-lg-offset-1">273 Concerts</text></li>
+                                        <li><img src = "img/sports.png" /><text class="col-lg-offset-1">350 Sports</text></li>
+                                        <li><img src = "img/conferance.png" /><text class="col-lg-offset-1">168 Conference</text></li>
+                                        <li><img src = "img/technology.png" /><text class="col-lg-offset-1">142 Technology</text></li>
+                                    </ul>
 
-        <!--Managers table Start-->
-        <div class="col-lg-8 col-lg-push-6">
-            <form ID="HomeForm" class="col-lg-12" method="POST" action="deleteSelectedManagers.php">
-                <table class ="homeTable table-responsive table-condensed table-striped table-hover  " >
-                    <!--<?php
-                    $username = $_SESSION['username'];
-                    echo '<h4> Welcome, ' . $username . '</h4>';
-                    ?>
-                    -->
-                    <thead>
-                        <tr>
-                            <th><input type="checkbox" onclick="checkAll(this)"><br></th>
-                            <th>ManagerID</th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Options</th>
-                        </tr>
-                    </thead>
-                    <tbody> 
-                    <script language="javascript">
-                        function checkAll(master) {
-                            var checked = master.checked;
-                            var col = document.getElementsByTagName("INPUT");
-                            for (var i = 0; i < col.length; i++) {
-                                col[i].checked = checked;
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-2 col-sm-2 box0">
+                        <div class="box1">
+                            <div id="some-div">
+                                <h3 class="redFont"><img class="iconPushUp2 " src="img/notepad.png" /><text class="col-lg-offset-1">933</text></h3>
+                                <span id="some-element">
+                                    <ul class="noSytle">
+                                        <li><h4>933 Created Since 2010</h4></li>
+                                        <li><img src = "img/concert.png" /><text class="col-lg-offset-1">273 Concerts</text></li>
+                                        <li><img src = "img/sports.png" /><text class="col-lg-offset-1">350 Sports</text></li>
+                                        <li><img src = "img/conferance.png" /><text class="col-lg-offset-1">168 Conference</text></li>
+                                        <li><img src = "img/technology.png" /><text class="col-lg-offset-1">142 Technology</text></li>
+                                    </ul>
+
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-2 col-sm-2 box0">
+                        <div class="box1">
+                            <div id="some-div">
+                                <h3 class="redFont"><img class="iconPushUp2 " src="img/notepad.png" /><text class="col-lg-offset-1">933</text></h3>
+                                <span id="some-element">
+                                    <ul class="noSytle">
+                                        <li><h4>933 Created Since 2010</h4></li>
+                                        <li><img src = "img/concert.png" /><text class="col-lg-offset-1">273 Concerts</text></li>
+                                        <li><img src = "img/sports.png" /><text class="col-lg-offset-1">350 Sports</text></li>
+                                        <li><img src = "img/conferance.png" /><text class="col-lg-offset-1">168 Conference</text></li>
+                                        <li><img src = "img/technology.png" /><text class="col-lg-offset-1">142 Technology</text></li>
+                                    </ul>
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 box0">
+                        <div class="box1">
+                            <div id="some-div">
+                                <h3 class="redFont"><img class="iconPushUp2 " src="img/notepad.png" /><text class="col-lg-offset-1">933</text></h3>
+                                <span id="some-element">
+                                    <ul class="noSytle">
+                                        <li><h4>933 Created Since 2010</h4></li>
+                                        <li><img src = "img/concert.png" /><text class="col-lg-offset-1">273 Concerts</text></li>
+                                        <li><img src = "img/sports.png" /><text class="col-lg-offset-1">350 Sports</text></li>
+                                        <li><img src = "img/conferance.png" /><text class="col-lg-offset-1">168 Conference</text></li>
+                                        <li><img src = "img/technology.png" /><text class="col-lg-offset-1">142 Technology</text></li>
+                                    </ul>
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 box0">
+                        <div class="box1">
+                            <div id="some-div">
+                                <h3 class="redFont"><img class="iconPushUp2 " src="img/notepad.png" /><text class="col-lg-offset-1">933</text></h3>
+                                <span id="some-element">
+                                    <ul class="noSytle ">
+                                        <li><h4>933 Created Since 2010</h4></li>
+                                        <li><img src = "img/concert.png" /><text class="col-lg-offset-1">273 Concerts</text></li>
+                                        <li><img src = "img/sports.png" /><text class="col-lg-offset-1">350 Sports</text></li>
+                                        <li><img src = "img/conferance.png" /><text class="col-lg-offset-1">168 Conference</text></li>
+                                        <li><img src = "img/technology.png" /><text class="col-lg-offset-1">142 Technology</text></li>
+                                    </ul>
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!--Top bar INFORMATION END-->
+            </div>
+            <!--Managers table Start-->
+            <div class=" col-lg-12 col-lg-push-3 pushDown2">
+                <form ID="HomeForm" class="col-lg-12" method="POST" action="deleteSelectedManagers.php">
+                    <table class ="homeTable table-responsive table-condensed table-striped table-hover  " >
+                        <!--<?php
+                        $username = $_SESSION['username'];
+                        echo '<h4> Welcome, ' . $username . '</h4>';
+                        ?>
+                        -->
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" onclick="checkAll(this)"><br></th>
+                                <th>ManagerID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Options</th>
+                            </tr>
+                        </thead>
+                        <tbody> 
+                        <script language="javascript">
+                            function checkAll(master) {
+                                var checked = master.checked;
+                                var col = document.getElementsByTagName("INPUT");
+                                for (var i = 0; i < col.length; i++) {
+                                    col[i].checked = checked;
+                                }
                             }
-                        }
-                    </script>
-                    <?php
-                    $row = $statement->fetch(PDO::FETCH_ASSOC);
-                    while ($row) {
-                        echo '<td><input type="checkbox" value="' . $row['managerID'] . '" name="managers[]" /></td>';
-                        echo '<td>' . $row['managerID'] . '</td>';
-                        echo '<td>' . $row['name'] . '</td>';
-                        echo '<td>' . $row['managerEmail'] . '</td>';
-                        echo '<td class=" noHover ">'
-                        //<a href="somepage.html"><button type="button">Text of Some Page</button></a>
-                        . '<a href="viewManager.php?id=' . $row['managerID'] . '"><button type="button" class="btn btn-md btn-info"  ><span class="hidden-xs glyphicon glyphicon-eye-open"></span></button></a> '
-                        . '<a href="editManagerForm.php?id=' . $row['managerID'] . '"><button type="button" class="btn btn-md btn-info"><span class="hidden-xs glyphicon glyphicon-wrench"></span></button></a> '
-                        . '<a class="deleteManager" <a href="deleteManager.php?id=' . $row['managerID'] . '"><button type="button" class="btn btn-md btn-info"><span class="hidden-xs glyphicon glyphicon-trash"></span></button></a> '
-                        . '</td>';
-                        echo '</tr>';
+                        </script>
+                        <?php
                         $row = $statement->fetch(PDO::FETCH_ASSOC);
-                    }
-                    ?>
-                    </tbody>
-                </table>  
-                <table>
-                    <tr>
-                        <td><input type="submit" class=" deleteSelectedBTN btn btn-md btn-info" name="deleteSelected" value="Delete Selected" /></td>
-                        <td><a href="createManagerform.php" class=" col-lg-12 col-lg-push-2 btn btn-md btn-info"> Create Manager</a></td>		 
-                    </tr> 
-                </table>
-            </form>
+                        while ($row) {
+                            echo '<td><input type="checkbox" value="' . $row['managerID'] . '" name="managers[]" /></td>';
+                            echo '<td>' . $row['managerID'] . '</td>';
+                            echo '<td>' . $row['name'] . '</td>';
+                            echo '<td>' . $row['managerEmail'] . '</td>';
+                            echo '<td class=" noHover ">'
+                            //<a href="somepage.html"><button type="button">Text of Some Page</button></a>
+                            . '<a href="viewManager.php?id=' . $row['managerID'] . '"><button type="button" class="btn btn-md btn-info"  ><span class="hidden-xs glyphicon glyphicon-eye-open"></span></button></a> '
+                            . '<a href="editManagerForm.php?id=' . $row['managerID'] . '"><button type="button" class="btn btn-md btn-info"><span class="hidden-xs glyphicon glyphicon-wrench"></span></button></a> '
+                            . '<a class="deleteManager" <a href="deleteManager.php?id=' . $row['managerID'] . '"><button type="button" class="btn btn-md btn-info"><span class="hidden-xs glyphicon glyphicon-trash"></span></button></a> '
+                            . '</td>';
+                            echo '</tr>';
+                            $row = $statement->fetch(PDO::FETCH_ASSOC);
+                        }
+                        ?>
+                        </tbody>
+                    </table>  
+                    <table>
+                        <tr>
+                            <td><input type="submit" class=" deleteSelectedBTN btn btn-md btn-info" name="deleteSelected" value="Delete Selected" /></td>
+                            <td><a href="createManagerform.php" class=" col-lg-12 col-lg-push-2 btn btn-md btn-info"> Create Manager</a></td>		 
+                        </tr> 
+                    </table>
+                </form>
 
-        </div>
-        <!--Managers table End-->
-    </div> 
-</body>
+            </div>
+            <!--Managers table End-->
+        </div> 
+    </body>
+</div>
 </html>

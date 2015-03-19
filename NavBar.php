@@ -37,11 +37,11 @@
             </div>
         </div>
     </div>
-    <!--
+    
     <text class="visible-lg">LARGE</text>
     <text class="visible-md">MEDIUM</text>
     <text class="visible-sm">SMALL</text>
     <text class="visible-xs">X-SMALL</text>
-    -->
+    
     <!-- END OF NAVBAR-->
 </html>
